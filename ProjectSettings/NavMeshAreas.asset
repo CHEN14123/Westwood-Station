@@ -33,7 +33,7 @@ NavMeshProjectSettings:
     cost: 1
   - name: STORES
     cost: 1
-  - name: 
+  - name: Track
     cost: 1
   - name: 
     cost: 1
@@ -74,9 +74,9 @@ NavMeshProjectSettings:
   - serializedVersion: 2
     agentTypeID: 0
     agentRadius: 0.5
-    agentHeight: 2
+    agentHeight: 1
     agentSlope: 45
-    agentClimb: 0.75
+    agentClimb: 10
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
