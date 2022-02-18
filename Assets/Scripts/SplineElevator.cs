@@ -161,7 +161,7 @@ public class SplineElevator : Conveyance
 
     public override void ConveyanceUpdate(Guest guest)
     {
-        Debug.Log("Conveyance Update1");
+        //Debug.Log("Conveyance Update1");
         //add guest to dictionary and their desired destination
         if (!_guests.ContainsKey(guest))
         {
@@ -176,10 +176,10 @@ public class SplineElevator : Conveyance
                 _buttonPressed.OrderBy(z => z.y);
             }
         }
-        Debug.Log("Conveyance Update2");
+        //Debug.Log("Conveyance Update2");
         //guard statement if the elevator is moving
         if (CurrentState == State.MOVING) { return; }
-        Debug.Log("Conveyance Update3");
+        //Debug.Log("Conveyance Update3");
         //call if the car if it isn't on the guest level
         /*
         if (Mathf.Abs(Car.transform.position.y - guest.transform.position.y) > 0.2f) //if Car and guest aren't on same level
@@ -196,7 +196,7 @@ public class SplineElevator : Conveyance
             return;
         }
         //*/
-        Debug.Log("Conveyance Update4");
+        //Debug.Log("Conveyance Update4");
         //once we reach this point, we can assume the guest is either loading or unloading
         //we are assuming the guests that are unloading are children of the Car GameObject
         if (guest.transform.parent == Car.transform) //if a guest is inside (aka a child of) the Car

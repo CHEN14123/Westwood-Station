@@ -307,7 +307,7 @@ MonoBehaviour:
   Speed: 8
   IsActive: 1
   Car: {fileID: 5192274246302447680}
-  Positions: {fileID: 8696674018867327276}
+  Positions: {fileID: 0}
   _buttonPressed: []
   CurrentState: 1
 --- !u!1 &5356753225580987279
@@ -514,10 +514,5 @@ GameObject:
 --- !u!4 &4847413916863849210 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2227592991609884067, guid: 6fb4014229c400542a58d5abedbefccf, type: 3}
-  m_PrefabInstance: {fileID: 6750747683729370969}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8696674018867327276 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2675054277227863669, guid: 6fb4014229c400542a58d5abedbefccf, type: 3}
   m_PrefabInstance: {fileID: 6750747683729370969}
   m_PrefabAsset: {fileID: 0}

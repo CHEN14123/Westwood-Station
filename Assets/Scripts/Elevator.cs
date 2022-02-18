@@ -75,6 +75,9 @@ public class Elevator : Conveyance
         Vector3 NextPosition = new Vector3(CarPosition.x, nextY, CarPosition.z);
         Car.transform.position = Vector3.MoveTowards(CarPosition, NextPosition, Time.deltaTime * Speed);
         //Debug.Log("Y: " + nextY + " , " + Vector3.Distance(CarPosition, NextPosition));
+        //Debug.Log("CP: " + CarPosition);
+        //Debug.Log("NP: " + NextPosition);
+        Debug.Log("Dist: " + Vector3.Distance(CarPosition, NextPosition));
         if (Vector3.Distance(CarPosition, NextPosition) > 0.01f) return;
 
         if (CurrentState == State.MOVING)
@@ -99,6 +102,8 @@ public class Elevator : Conveyance
             //add button press
             if (!_buttonPressed.Contains(destination.transform.position.y))
             {
+                Debug.Log("Break1");
+                //Debug.Break();
                 _buttonPressed.Add(destination.transform.position.y);
                 _buttonPressed.Sort();
             }
@@ -108,13 +113,15 @@ public class Elevator : Conveyance
         if (CurrentState == State.MOVING) { return; }
 
         //call if the car if it isn't on the guest level
-        if (Mathf.Abs(Car.transform.position.y - guest.transform.position.y) > 0.2f) //if Car and guest aren't on same level
+        if (Mathf.Abs(Car.transform.position.y - guest.transform.position.y) > 0.4f) //if Car and guest aren't on same level
         {
             Destination destination = GetDestination(guest.transform.position, guest);
 
             //add button press
             if (!_buttonPressed.Contains(destination.transform.position.y))
             {
+                Debug.Log("Break2");
+                //Debug.Break();
                 _buttonPressed.Add(destination.transform.position.y);
                 _buttonPressed.Sort();
             }
