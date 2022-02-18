@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Prefab/BIKE.prefab.meta
 guid: 3e82da7f03e7592449d3780678060f3e
+=======
+guid: 8c0fe82b1b5fde24298f08eda2ed2edd
+>>>>>>> be7e9fb0f3314c6e9bde5107fcb3e0210dfe7e0f:Assets/Prefab/Cabin.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 
